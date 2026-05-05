@@ -15,8 +15,7 @@ connectCloudinary()
 
 // middlewares
 app.use(express.json())
-const allowedOrigins = ['https://medisync-zeta-olive.vercel.app', 'https://medisync-1a99.vercel.app']
-app.use(cors({ origin: allowedOrigins }))
+app.use(cors())
 
 // api endpoints
 app.use("/api/user", userRouter)
